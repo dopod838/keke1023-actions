@@ -5,11 +5,11 @@ sed -i '/MENTOHUST/d' configs/templates/RM2100.config
 sed -i '/TUNSAFE/d' configs/templates/RM2100.config
 
 # 去掉优酸乳
-sed -i 's#CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y#CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n#' build_firmware_modify
-sed -i 's#CONFIG_FIRMWARE_INCLUDE_XRAY=y#CONFIG_FIRMWARE_INCLUDE_XRAY=n#' build_firmware_modify
-sed -i 's#CONFIG_FIRMWARE_INCLUDE_V2RAY=y#CONFIG_FIRMWARE_INCLUDE_V2RAY=n#' build_firmware_modify
-sed -i 's#CONFIG_FIRMWARE_INCLUDE_TROJAN=y#CONFIG_FIRMWARE_INCLUDE_TROJAN=n#' build_firmware_modify
-sed -i 's#CONFIG_FIRMWARE_INCLUDE_SSOBFS=y#CONFIG_FIRMWARE_INCLUDE_SSOBFS=n#' build_firmware_modify
+#sed -i 's#CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y#CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n#' build_firmware_modify
+#sed -i 's#CONFIG_FIRMWARE_INCLUDE_XRAY=y#CONFIG_FIRMWARE_INCLUDE_XRAY=n#' build_firmware_modify
+#sed -i 's#CONFIG_FIRMWARE_INCLUDE_V2RAY=y#CONFIG_FIRMWARE_INCLUDE_V2RAY=n#' build_firmware_modify
+#sed -i 's#CONFIG_FIRMWARE_INCLUDE_TROJAN=y#CONFIG_FIRMWARE_INCLUDE_TROJAN=n#' build_firmware_modify
+#sed -i 's#CONFIG_FIRMWARE_INCLUDE_SSOBFS=y#CONFIG_FIRMWARE_INCLUDE_SSOBFS=n#' build_firmware_modify
 
 # 修改默认ip段
 sed -i 's#192.168.2#192.168.5#' user/shared/defaults.h
@@ -30,7 +30,7 @@ sed -i 's#CONFIG_FIRMWARE_INCLUDE_OC=n#CONFIG_FIRMWARE_INCLUDE_OC=y#' build_firm
 # sed -i 's#CONFIG_FIRMWARE_MT7621_OC="0x312"#CONFIG_FIRMWARE_MT7621_OC="0x362"#' build_firmware_modify
 # 去掉不要的插件
 sed -i 's#ADBYBY=y#ADBYBY=n#' build_firmware_modify
-sed -i 's#ZEROTIER=y#ZEROTIER=n#' build_firmware_modify
+
 sed -i 's#ALIDDNS=y#ALIDDNS=n#' build_firmware_modify
 sed -i 's#DDNSTO=y#DDNSTO=n#' build_firmware_modify
 sed -i 's#SQM=y#SQM=n#' build_firmware_modify
@@ -38,7 +38,7 @@ sed -i 's#WIREGUARD=y#WIREGUARD=n#' build_firmware_modify
 # 增加需要的插件
 sed -i 's#SMARTDNS=n#SMARTDNS=y#' build_firmware_modify
 sed -i 's#FRPC=n#FRPC=y#' build_firmware_modify
-
+sed -i 's#ZEROTIER=y#ZEROTIER=y#' build_firmware_modify
 
 
 
